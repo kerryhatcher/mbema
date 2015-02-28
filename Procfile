@@ -1,0 +1,1 @@
+web: gunicorn VirtOC:app --log-file=-

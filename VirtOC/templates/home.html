@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block maincontent %}
+
+
+
+<div class="page-header">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>EOC Status:</h1>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+
+  <img src="/status/status.svg?width=300&height=100" />
+
+
+
+            <div class="bs-component">
+              <blockquote>
+                <p>&lt;img src="{{ request.url }}status/status.svg?width=300&amp;height=100" /&gt; </p>
+                <small>Put status on any webiste with this code</small>
+              </blockquote>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+{% endblock %}
+
+{% block scripts %}
+  {{super()}}
+    <script type="text/javascript">
+$(document).ready(function () {
+    $("#type").click();
+});
+    </script>
+{% endblock %}
